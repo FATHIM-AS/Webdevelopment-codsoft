@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: fade-in 2s; /* add animation to header */
+}
+
+.logo {
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    animation: slide-in 2s; /* add animation to logo h1 */
+}
+
+.logo p {
+    font-size: 16px;
+    color: #ccc;
+    animation: fade-in 2s; /* add animation to logo p */
+}
+
+#about {
+    background-color: #f7f7f7;
+    padding: 20px;
+    animation: slide-up 2s; /* add animation to about section */
+}
+
+#about img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px;
+    
+}
+
+#skills {
+    background-color: #fff;
+    padding: 20px;
+    animation: slide-up 2s; /* add animation to skills section */
+}
+
+#skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills li {
+    margin: 20px;
+    animation: fade-in 2s; /* add animation to skills list items */
+}
+
+#skills img {
+    width: 50px;
+    height: 50px;
+    
+}
+
+#projects {
+    background-color: #f7f7f7;
+    padding: 20px;
+    animation: slide-up 2s; /* add animation to projects section */
+}
+
+#projects ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects li {
+    margin: 20px;
+    width: 300px;
+    animation: fade-in 2s; /* add animation to projects list items */
+}
+
+#projects img {
+    width: 100%;
+    height: auto;
+    animation: zoom-in 2s; /* add animation to projects images */
+}
+
+#projects h3 {
+    margin: 10px 0;
+    animation: fade-in 2s; /* add animation to projects headings */
+}
+
+#resume {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: slide-up 2s; /* add animation to resume section */
+}
+
+#contact {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+    animation: slide-up 2s; /* add animation to contact section */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    animation: fade-in 2s; /* add animation to footer */
+}
+
+/* animations */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
