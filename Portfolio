@@ -1,0 +1,260 @@
+*****************HTML***********************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <h1>Fathim A S</h1>
+            <p>Full Stack Developer</p>
+        </div>
+    </header>
+
+    
+    <section id="about">
+        <img src="fathim.png" alt="Jane Doe">
+        <p>Hi Everyone.I am Fathim.A Passionate Student Working hard to achieve milestones</p>
+    </section>
+
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>
+                <img src="python.jpeg" alt="Python">
+                <p>Python</p>
+            </li>
+            <li>
+                <img src="html.jpeg" alt="HTML">
+                <p>HTML</p>
+            </li>
+            <li>
+                <img src="css.png" alt="CSS">
+                <p>CSS</p>
+            </li>
+            <li>
+                <img src="jss.jpeg" alt="JavaScript">
+                <p>JavaScript</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <img src="rainprediction.jpeg" alt="Rain Prediction">
+                <h3>Rain Prediction</h3>
+                <p>Rainfall Prediction is a Machine Learning based project used to predict rain forecast well in advance</p>
+            </li>
+            <li>
+                <img src="healthcare analysis.jpeg" alt="Healthcare Analysis">
+                <h3>Healthcare Analysis</h3>
+                <p>Based on the given Dataset,We will find the analysis in in the field of medicine to prevent the negative outcomes in healthcare </p>
+            </li>
+            <li>
+                <img src="fakenews.jpeg" alt="Fake News Prediction">
+                <h3>FakeNews Prediction</h3>
+                <p>Fake News Prediction model helps us to find and guide us among all the fakenews</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p><a href="Fathim_A_S_Resume.pdf" download>Download Resume (PDF)</a></p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><a href="mailto:itzfathimabbas@example.com">itzfathimabbas@example.com</a></p>
+        <p>+91-8xxxxxxx2/p>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Fathim. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+******************************************CSS*********************************************
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: fade-in 2s; /* add animation to header */
+}
+
+.logo {
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    animation: slide-in 2s; /* add animation to logo h1 */
+}
+
+.logo p {
+    font-size: 16px;
+    color: #ccc;
+    animation: fade-in 2s; /* add animation to logo p */
+}
+
+#about {
+    background-color: #f7f7f7;
+    padding: 20px;
+    animation: slide-up 2s; /* add animation to about section */
+}
+
+#about img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px;
+    
+}
+
+#skills {
+    background-color: #fff;
+    padding: 20px;
+    animation: slide-up 2s; /* add animation to skills section */
+}
+
+#skills ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills li {
+    margin: 20px;
+    animation: fade-in 2s; /* add animation to skills list items */
+}
+
+#skills img {
+    width: 50px;
+    height: 50px;
+    
+}
+
+#projects {
+    background-color: #f7f7f7;
+    padding: 20px;
+    animation: slide-up 2s; /* add animation to projects section */
+}
+
+#projects ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects li {
+    margin: 20px;
+    width: 300px;
+    animation: fade-in 2s; /* add animation to projects list items */
+}
+
+#projects img {
+    width: 100%;
+    height: auto;
+    animation: zoom-in 2s; /* add animation to projects images */
+}
+
+#projects h3 {
+    margin: 10px 0;
+    animation: fade-in 2s; /* add animation to projects headings */
+}
+
+#resume {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: slide-up 2s; /* add animation to resume section */
+}
+
+#contact {
+    background-color: #f7f7f7;
+    padding: 20px;
+    text-align: center;
+    animation: slide-up 2s; /* add animation to contact section */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    animation: fade-in 2s; /* add animation to footer */
+}
+
+/* animations */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
